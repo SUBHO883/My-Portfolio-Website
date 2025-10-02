@@ -1,6 +1,6 @@
 # 🛡️ Legal Notice & Copyright
 
-**Owner:** Subho [Your Last Name]  
+**Owner:** Subho Bag  
 **Portfolio Repository:** MyPortfolioWebsite  
 
 ---

@@ -24,12 +24,14 @@ function scrollToSection(id) {
 
 // Skills Data
 const skills = [
-  { name: "React", level: 90 },
+  { name: "React", level: 35 },
   { name: "TypeScript", level: 85 },
-  { name: "Node.js", level: 80 },
+  { name: "javascript", level: 75 },
   { name: "Python", level: 75 },
-  { name: "AWS", level: 70 },
-  { name: "Docker", level: 65 }
+  { name: "HTML", level: 100 },
+  { name: "CSS", level: 100 },
+  { name: "JAVA", level: 50 },
+  { name: "SQL", level: 80 }
 ];
 const skillsGrid = document.getElementById('skills-grid');
 skills.forEach(skill => {
@@ -199,6 +201,7 @@ themeToggle.addEventListener("click", () => {
     themeToggle.textContent = "🌙"; // Dark mode icon
   }
 });
+
 
 
 

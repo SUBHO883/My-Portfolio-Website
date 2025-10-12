@@ -73,8 +73,8 @@ window.addEventListener('scroll', () => {
 
  document.getElementById("downloadBtn").addEventListener("click", function () {
     const link = document.createElement("a");
-    link.href = "files/Smart_Resume_2025.docx";
-    link.download = "Subho_CV.docx";
+    link.href = "files/my_resume.pdf";
+    link.download = "Subho_CV.pdf";
     link.click();
   });
 
@@ -201,6 +201,7 @@ themeToggle.addEventListener("click", () => {
     themeToggle.textContent = "🌙"; // Dark mode icon
   }
 });
+
 
 
 

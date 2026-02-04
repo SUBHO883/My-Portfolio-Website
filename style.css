@@ -77,6 +77,10 @@ nav .nav-right button:hover {
   transform: scale(1.2);
 }
 
+#theme-toggle {
+  cursor: pointer;
+}
+
 /* Dark mode styles for body */
 body.dark-mode {
   background-color: #121212;
@@ -86,6 +90,26 @@ body.dark-mode {
 body.dark-mode nav {
   background: rgba(30,30,30,0.9);
   border-bottom: 1px solid #444;
+}
+
+body.dark-mode .nav-right button{
+  color: white;
+}
+
+body.dark-mode .nav-right button:hover{
+  color: #4f46e5;
+}
+
+body.dark-mode .nav-right.show{
+  background: black;
+}
+
+body.dark-mode .hamburger {
+  color: white;
+}
+
+body.dark-mode h3{
+  color: white;
 }
 
 
@@ -298,10 +322,11 @@ body.dark-mode nav {
 
 /* Footer */
 footer {
-  background: black;
-  color: white;
-  padding: 2rem;
+  color: black;
+  padding: 1.60rem;
   text-align: center;
+  border-radius: 5px;
+  background-color: #555;
 }
 
 

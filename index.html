@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
   <link rel="stylesheet" href="style.css">
 </head>
+<script>
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+</script>
 <body>
   <div id="background"></div>
 
@@ -97,7 +102,7 @@ If you want to know more about my skills, please check out the Skills section of
     <div class="container text-center">
       <h2>Let's Work Together</h2>
       <p>Reach out and let's discuss how we can work together.</p>
-      <form action="contact.php" method="POST" class="contact-form">
+      <form id="contactForm">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
@@ -105,13 +110,15 @@ If you want to know more about my skills, please check out the Skills section of
       </form>
     </div>
   </section>
+  <p id="formStatus"></p>
 
-  <footer>
-    <div class="container text-center">
+  <footer class="footer">
+    <div class="container text-center" class="footer-txt">
       © 2025 Subho Bag. All Rights Reserved. | Designed & Built by Subho Bag
     </div>
   </footer>
 
   <script src="script.js"></script>
+  <script src="config.json"></script>
 </body>
 </html>

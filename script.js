@@ -196,11 +196,12 @@ themeToggle.addEventListener("click", () => {
 
   // Icon change current mode
   if(document.body.classList.contains("dark-mode")){
-    themeToggle.textContent = "☀️"; // Light mode icon
+    themeToggle.className = "fa-solid fa-sun";
   } else {
-    themeToggle.textContent = "🌙"; // Dark mode icon
+    themeToggle.className = "fa-solid fa-moon";
   }
 });
+
 
 
 

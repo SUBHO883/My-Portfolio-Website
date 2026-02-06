@@ -79,8 +79,8 @@ window.addEventListener('scroll', () => {
 
  document.getElementById("downloadBtn").addEventListener("click", function () {
     const link = document.createElement("a");
-    link.href = "files/my_resume.pdf";
-    link.download = "Subho_CV.pdf";
+    link.href = "file/my_resume.pdf";
+    link.download = "Subho_Resume.pdf";
     link.click();
   });
 
@@ -295,3 +295,4 @@ fetch("config.json")
   .then(data => {
     WEB3_KEY = data.WEB3FORMS_KEY;
   });
+

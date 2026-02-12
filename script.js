@@ -198,7 +198,8 @@ themeToggle.addEventListener("click", () => {
   if(document.body.classList.contains("dark-mode")){
     themeToggle.className = "fa-solid fa-sun";
     themeToggle.style.color = "white";
-    
+    skillslevel.forEach(skills=> {skills.style.stock = "white";});
+    skills.name.style.color = "white";
   } else {
     themeToggle.className = "fa-solid fa-moon";
     themeToggle.style.color = "black";
@@ -295,4 +296,3 @@ fetch("config.json")
   .then(data => {
     WEB3_KEY = data.WEB3FORMS_KEY;
   });
-

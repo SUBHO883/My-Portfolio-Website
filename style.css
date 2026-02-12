@@ -112,6 +112,29 @@ body.dark-mode h3{
   color: white;
 }
 
+body.dark-mode .about-text p{
+  color: white;
+}
+
+body.dark-mode .container h2{
+  color: white;
+}
+
+body.dark-mode .skills-grid{
+  color: white;
+}
+
+body.dark-mode .container text-center h2{
+  color: white;
+}
+
+body.dark-mode .work_from-p{
+  color: white;
+}
+
+body.dark-mode .projects_frame{
+  color: black;
+}
 
 /* Sections */
 .section {

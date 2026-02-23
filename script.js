@@ -1,18 +1,16 @@
-// Dynamic Gradient
 const background = document.getElementById('background');
 const colors = [
-  { color1: '#667eea', color2: '#000000' },
-  { color1: '#34eadb', color2: '#38ef7d' },
-  { color1: '#ff6b6b', color2: '#ff9a3d' },
-  { color1: '#4facfe', color2: '#00f2fe' },
-  { color1: '#a8edea', color2: '#fed6e3' }
+  { color1: '#667eea'},
+  { color1: '#34eadb'},
+  { color1: '#ff6b6b' },
+  { color1: '#4facfe' },
+  { color1: '#a8edea'}
 ];
 let currentIndex = 0;
 
-// Set initial gradient
 background.style.background = `linear-gradient(135deg, ${colors[currentIndex].color1}, ${colors[currentIndex].color2})`;
 
-// Function to change gradient only if light mode
+
 function updateGradient() {
   if (!document.body.classList.contains("dark-mode")) {
     currentIndex = (currentIndex + 1) % colors.length;
@@ -20,15 +18,15 @@ function updateGradient() {
   }
 }
 
-// Interval for changing gradient
+
 setInterval(updateGradient, 8000);
 
-// Scroll to section
+
 function scrollToSection(id) {
   document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
 
-// Skills Data
+
 const skills = [
   { name: "HTML", level: 100 },
   { name: "CSS", level: 100 },
@@ -36,7 +34,7 @@ const skills = [
   { name: "Python", level: 75 },
   { name: "SQL", level: 80},
   { name: "Java", level:50},
-  { name: "Ethical Hacking", level: 100},
+  { name: "Cybersecurity", level: 100},
   { name: "React", level: 10 }
 ];
 const skillsGrid = document.getElementById('skills-grid');
@@ -55,7 +53,6 @@ skills.forEach(skill => {
 });
 
 
-// Animate skill bars on scroll
 const circles = document.querySelectorAll('.skill-circle circle:nth-child(2)');
 circles.forEach((circle, index) => {
   const radius = 54;
@@ -124,7 +121,7 @@ projects.forEach(project => {
 
 
 
-// Mobile Nav
+
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-right');
 
@@ -132,7 +129,6 @@ hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('show');
 });
 
-// Close nav when clicking link (mobile UX)
 document.querySelectorAll('#nav-right button').forEach(btn => {
   btn.addEventListener('click', () => {
     navLinks.classList.remove('show');
@@ -140,7 +136,7 @@ document.querySelectorAll('#nav-right button').forEach(btn => {
 });
 
 
-// Typing Effect
+
 const typedText = document.getElementById("typed-text");
 
 const textArray = [
@@ -152,9 +148,9 @@ const textArray = [
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
-let typingSpeed = 100; // typing speed (ms)
-let eraseSpeed = 60;   // erase speed (ms)
-let delayBetween = 1500; // delay before erasing
+let typingSpeed = 100; 
+let eraseSpeed = 60;   
+let delayBetween = 1500; 
 
 function typeEffect() {
   const currentText = textArray[textIndex];
@@ -194,7 +190,7 @@ const themeToggle = document.getElementById("theme-toggle");
 themeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 
-  // Icon change current mode
+
   if(document.body.classList.contains("dark-mode")){
     themeToggle.className = "fa-solid fa-sun";
     themeToggle.style.color = "white";
@@ -290,7 +286,6 @@ form.addEventListener("submit", async function (e) {
 
 let WEB3_KEY = "";
 
-// API key load from json
 fetch("config.json")
   .then(res => res.json())
   .then(data => {

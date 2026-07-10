@@ -35,7 +35,7 @@ const skills = [
   { name: "SQL", level: 80},
   { name: "Java", level:50},
   { name: "Cybersecurity", level: 100},
-  { name: "React", level: 10 }
+  { name: "React", level: 20 }
 ];
 const skillsGrid = document.getElementById('skills-grid');
 skills.forEach(skill => {

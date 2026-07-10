@@ -99,6 +99,13 @@ const projects = [
     tech: ["JavaScript", "OpenWeather API", "CSS3", "HTML5"],
     img: "image/Weather.png",
     url: "https://subho883.github.io/Weather-Dashboard-with-Modern-UI/"
+  },
+  {
+    title: "Solo Leveling Fitnest",
+    description: "Fitnest help and track body health",
+    tech: ["HTML5, CSS3, JavaSrcript"],
+    img: "image/solo leveling.jpg",
+    url: "https://subho883.github.io/solo-leveling-system/"
   }
 ];
 const projectsGrid = document.getElementById('projects-grid');

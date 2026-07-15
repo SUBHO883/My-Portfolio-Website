@@ -30,12 +30,12 @@ function scrollToSection(id) {
 const skills = [
   { name: "HTML", level: 100 },
   { name: "CSS", level: 100 },
-  { name: "javascript", level: 80 },
-  { name: "Python", level: 75 },
-  { name: "SQL", level: 80},
-  { name: "Java", level:50},
+  { name: "javascript", level: 100 },
+  { name: "Python", level: 80 },
+  { name: "SQL", level: 100},
+  { name: "Java", level:60},
   { name: "Cybersecurity", level: 100},
-  { name: "React", level: 20 }
+  { name: "React", level: 50 }
 ];
 const skillsGrid = document.getElementById('skills-grid');
 skills.forEach(skill => {

@@ -33,9 +33,13 @@ const skills = [
   { name: "javascript", level: 100 },
   { name: "Python", level: 80 },
   { name: "SQL", level: 100},
-  { name: "Java", level:60},
-  { name: "Cybersecurity", level: 100},
-  { name: "React", level: 50 }
+  { name: "Java", level:86},
+  { name: "React", level: 50 },
+  { name: "Node.js", level: 40 },
+  { name: "MySQL", level: 100 },
+  { name: "MOGODB", level: 100 },
+  { name: "AWS", level: 75 },
+  { name: "Cybersecurity", level: 100}
 ];
 const skillsGrid = document.getElementById('skills-grid');
 skills.forEach(skill => {
@@ -125,6 +129,40 @@ projects.forEach(project => {
 
 
 
+
+const certificates = [
+  {
+    title: "Google Cybersecurity Professional Certificate",
+    image: "image/certificates/Google Cybersecurity.png",
+    skills: ["Linux","Python", "SQL", "SIEM", "Networking"],
+    certificateUrl: "https://coursera.org/share/1db67e14b8a0fb7f318f0f66e838e2b2"
+  }
+];
+
+const certificateSlider = document.getElementById("certificate-slider");
+
+certificates.forEach(cert => {
+
+    const card = document.createElement("div");
+
+    card.className = "certificate-card";
+
+    card.innerHTML = `
+        <img src="${cert.image}" alt="${cert.title}">
+        <h3>${cert.title}</h3>
+
+        <div class="tags">
+            ${cert.skills.map(skill => `<span>${skill}</span>`).join("")}
+        </div>
+    `;
+
+    card.addEventListener("click", () => {
+        window.open(cert.certificateUrl, "_blank");
+    });
+
+    certificateSlider.appendChild(card);
+
+});
 
 
 

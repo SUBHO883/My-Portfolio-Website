@@ -343,6 +343,89 @@ body.dark-mode .projects_frame{
   cursor: pointer;
 }
 
+/* Certificate */
+.certificate-slider{
+    display:flex;
+    gap:25px;
+
+    overflow-x:auto;
+    overflow-y:hidden;
+
+    scroll-behavior:smooth;
+    scroll-snap-type:x mandatory;
+
+    padding:20px 0;
+}
+
+.certificate-slider::-webkit-scrollbar{
+    display:none;
+}
+
+.certificate-card{
+
+    min-width:300px;
+    max-width: 300px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:18px;
+
+    scroll-snap-align:start;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+.certificate-card:hover{
+
+    transform:translateY(-10px) scale(1.03);
+
+}
+
+.certificate-card img{
+
+  width:100%;
+  max-width: 280px;   /* Image ki maximum width */
+  height: 180px;      /* Fixed height */
+  object-fit: contain; /* Certificate pura dikhega */
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+
+}
+
+.tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:15px;
+
+}
+
+.tags span{
+
+    background:#eef2ff;
+
+    color:#4f46e5;
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+}
+
 /* Footer */
 footer {
   color: black;

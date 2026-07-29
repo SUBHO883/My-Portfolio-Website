@@ -136,6 +136,10 @@ body.dark-mode .projects_frame{
   color: black;
 }
 
+body.dark-mode .skill-circle text{
+    fill:white;
+}
+
 /* Sections */
 .section {
   min-height: 100vh;

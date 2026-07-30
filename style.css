@@ -235,6 +235,20 @@ body.dark-mode .skill-circle text{
     box-shadow: rgb(91, 77, 248);
 }
 
+.home-icon a i,
+.leetcode-icon{
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    display: block;
+}
+
+.leetcode-icon{
+    fill: currentColor;
+    position: relative;
+    top: -1px;
+}
+
 /* About */
 .about-container {
   display: flex;

@@ -28,18 +28,24 @@ function scrollToSection(id) {
 
 
 const skills = [
+  { name: "Java", level:86},
+  { name: "Python", level: 80 },
+  { name: "javascript", level: 100 },
   { name: "HTML", level: 100 },
   { name: "CSS", level: 100 },
-  { name: "javascript", level: 100 },
-  { name: "Python", level: 80 },
-  { name: "SQL", level: 100},
-  { name: "Java", level:86},
   { name: "React", level: 50 },
+  { name: "Bootstrap", level: 0 },
   { name: "Node.js", level: 40 },
+  { name: "Express", level: 10 },
+  { name: "Spring Boot", level: 0 },
+  { name: "RESTful APIs", level: 0 },
+  { name: "Authentication (JWT)", level: 0 },
+  { name: "Middleware", level: 0 },
   { name: "MySQL", level: 100 },
   { name: "MOGODB", level: 100 },
+  { name: "Docker", level: 100},
   { name: "AWS", level: 75 },
-  { name: "Cybersecurity", level: 100}
+  { name: "Cybersecurity", level: 100},
 ];
 const skillsGrid = document.getElementById('skills-grid');
 skills.forEach(skill => {

@@ -142,6 +142,12 @@ const certificates = [
     image: "image/certificates/Google Cybersecurity.png",
     skills: ["Linux","Python", "SQL", "SIEM", "Networking"],
     certificateUrl: "https://coursera.org/share/1db67e14b8a0fb7f318f0f66e838e2b2"
+  },
+  {
+    title: "AWS Artificial Intelligence",
+    image: "image/certificates/AWS Artificial Intelligence.png",
+    skills: ["Developing Generative AI solutions", "Developing Machine Learning Solutions", "prompt engineering", "Responsible AI"],
+    certificateUrl: "https://subho883.github.io/My-Portfolio-Website/file/AWS-Artificial-Intelligence.pdf",
   }
 ];
 

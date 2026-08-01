@@ -241,10 +241,10 @@ body.dark-mode .skill-circle text{
     height: 20px;
     font-size: 20px;
     display: block;
+    object-fit:contain;
 }
 
 .leetcode-icon{
-    fill: currentColor;
     position: relative;
     top: -1px;
 }

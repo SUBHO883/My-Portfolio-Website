@@ -33,18 +33,18 @@ const skills = [
   { name: "javascript", level: 100 },
   { name: "HTML", level: 100 },
   { name: "CSS", level: 100 },
-  { name: "React", level: 50 },
+  { name: "React", level: 100 },
   { name: "Bootstrap", level: 5 },
   { name: "Node.js", level: 40 },
   { name: "Express", level: 60 },
   { name: "Spring Boot", level: 2 },
-  { name: "RESTful APIs", level: 2 },
-  { name: "Authentication (JWT)", level: 10 },
+  { name: "RESTful APIs", level: 70 },
+  { name: "Authentication (JWT)", level: 60 },
   { name: "Middleware", level: 50 },
   { name: "MySQL", level: 100 },
-  { name: "MOGODB", level: 100 },
-  { name: "Docker", level: 100},
-  { name: "AWS", level: 75 },
+  { name: "MOGODB", level: 80 },
+  { name: "Docker", level: 75},
+  { name: "AWS", level: 60 },
   { name: "Cybersecurity", level: 100},
 ];
 const skillsGrid = document.getElementById('skills-grid');
@@ -116,8 +116,15 @@ const projects = [
     tech: ["HTML5, CSS3, JavaSrcript"],
     img: "image/solo leveling.jpg",
     url: "https://subho883.github.io/solo-leveling-system/"
+  },
+  {
+    title: "FoodPrism Website",
+    description: "Developed a full-stack food ordering web application with React.js, Node.js, and API integration. Implemented responsive UI components, menu management, cart functionality, and user-friendly food browsing experience.",
+    tech: ["React.js, Node.js, Express.js, MongoDB, JWT, Razorpay, REST API, Axios, Git, Vercel, Render"],
+    img: "image/FoodPrism.png",
+    url: "https://foodprism-seven.vercel.app/"
   }
-];
+]
 const projectsGrid = document.getElementById('projects-grid');
 
 projects.forEach(project => {

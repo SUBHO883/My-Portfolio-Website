@@ -122,7 +122,7 @@ const projects = [
     description: "Developed a full-stack food ordering web application with React.js, Node.js, and API integration. Implemented responsive UI components, menu management, cart functionality, and user-friendly food browsing experience.",
     tech: ["React.js, Node.js, Express.js, MongoDB, JWT, Razorpay, REST API, Axios, Git, Vercel, Render"],
     img: "image/FoodPrism.png",
-    url: "https://foodprism-seven.vercel.app/"
+    url: "https://foodprism-nu.vercel.app/"
   }
 ]
 const projectsGrid = document.getElementById('projects-grid');

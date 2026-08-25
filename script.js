@@ -123,6 +123,13 @@ const projects = [
     tech: ["React.js, Node.js, Express.js, MongoDB, JWT, Razorpay, REST API, Axios, Git, Vercel, Render"],
     img: "image/FoodPrism.png",
     url: "https://foodprism-nu.vercel.app/"
+  },
+  {
+    title: "Malware Analysis & Forensics",
+    description: "upload Malware file and analyze it using various tools",
+    tech: ["Python, Flask, Pandas, Scikit-learn, Numpy, Pefile, Joblib, Gunicorn, HTML"],
+    img: "My-Portfolio-Website/image/Malware.png",
+    url: "https://malware-analysis-forensics.onrender.com/"
   }
 ]
 const projectsGrid = document.getElementById('projects-grid');

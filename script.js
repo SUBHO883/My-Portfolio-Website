@@ -128,7 +128,7 @@ const projects = [
     title: "Malware Analysis & Forensics",
     description: "upload Malware file and analyze it using various tools",
     tech: ["Python, Flask, Pandas, Scikit-learn, Numpy, Pefile, Joblib, Gunicorn, HTML"],
-    img: "My-Portfolio-Website/image/Malware.png",
+    img: "image/Malware.png",
     url: "https://malware-analysis-forensics.onrender.com/"
   }
 ]
